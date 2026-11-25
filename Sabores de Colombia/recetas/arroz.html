@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es" data-title-key="title.arroz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arroz con Camarones - Sabores de Colombia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo-text">Sabores de Colombia</div>
+        <nav aria-label="Principal" data-i18n-label="nav.label">
+            <ul class="nav-links">
+                <li><a href="../index.html" data-i18n="nav.home">INICIO</a></li>
+                <li><a href="../index.html#regiones" data-i18n="nav.regions">REGIONES</a></li>
+                <li><a href="../index.html#recetas" data-i18n="nav.recipes">RECETAS</a></li>
+                <li class="lang-select">
+                    <a href="../index.html" class="active" data-lang="es" aria-current="true">ES</a>
+                    <span>|</span>
+                    <a href="../index-en.html" data-lang="en">EN</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="recipe-detail-container" style="padding: 4rem 15%; background: white; margin: 2rem auto; max-width: 900px; border-radius: 8px;">
+        <a href="../index.html#recetas" style="color: var(--color-terracota); font-weight: bold;" data-i18n="recipe.back">← Volver a recetas</a>
+
+        <h1 style="font-size: 2.8rem; margin: 1rem 0;" data-i18n="arroz.title">Arroz con Camarones</h1>
+        <p style="font-style: italic; color: var(--color-verde); margin-bottom: 2rem;" data-i18n="arroz.region">Región Caribe • Colombia</p>
+
+        <!-- Imagen del plato -->
+        <img src="../Imagenes/arroz.jpg" alt="Plato servido de arroz con camarones acompañado de patacones y ensalada" data-i18n-alt="alt.arroz" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 8px; margin-bottom: 2rem;">
+
+        <!-- Contexto Cultural -->
+        <section style="margin-bottom: 2rem;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 0.5rem;" data-i18n="recipe.history">Historia y Tradición</h2>
+            <p data-i18n="arroz.history">El arroz con camarones está relacionado principalmente con las regiones costeras de Colombia, especialmente el Caribe y el Pacífico, donde los productos provenientes del mar forman parte importante de la alimentación tradicional. La combinación del arroz con camarones, verduras, condimentos y preparaciones propias de cada región refleja la influencia de las comunidades costeras y su relación histórica con los recursos marítimos y fluviales. Es un plato que evidencia la diversidad cultural y gastronómica de las costas colombianas, donde los ingredientes locales se integran con diferentes técnicas culinarias transmitidas entre generaciones.</p>
+        </section>
+
+        <!-- Ingredientes -->
+        <section style="margin-bottom: 2rem;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 0.5rem;" data-i18n="recipe.ingredients">Ingredientes</h2>
+            <ul style="margin-left: 2rem;">
+                <li data-i18n="arroz.ing.1">500 g. de camarones</li>
+                <li data-i18n="arroz.ing.2">1 taza de arroz lavado</li>
+                <li data-i18n="arroz.ing.3">½ taza de leche de coco</li>
+                <li data-i18n="arroz.ing.4">½ taza de hogao o guiso</li>
+                <li data-i18n="arroz.ing.5">1 cucharada de perejil</li>
+                <li data-i18n="arroz.ing.6">Sal y pimienta</li>
+            </ul>
+        </section>
+
+        <!-- Preparación -->
+        <section style="margin-bottom: 2rem;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 0.5rem;" data-i18n="recipe.method">Preparación</h2>
+            <ol style="margin-left: 2rem;">
+                <li data-i18n="arroz.step.1">Limpie los camarones (pele y desvene). Cocine las cáscaras en una taza de agua por 5 minutos. Cuele el caldo y resérvelo.</li>
+                <li data-i18n="arroz.step.2">Caliente el hogao en una cazuela grande. Saltee los camarones brevemente, luego agregue el arroz, el caldo de las cáscaras y dos tazas de agua. Sazone con sal y pimienta, y cocine por 20 minutos.</li>
+                <li data-i18n="arroz.step.3">Añada la leche de coco, revuelva y deje cocinar a fuego muy lento por 10 minutos más (debe quedar húmedo). Espolvoree el perejil y sirva.</li>
+            </ol>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Sabores de Colombia</div>
+            <ul class="footer-nav">
+                <li><a href="../index.html#inicio" data-i18n="nav.home">INICIO</a></li>
+                <li><a href="../index.html#regiones" data-i18n="nav.regions">REGIONES</a></li>
+                <li><a href="../index.html#recetas" data-i18n="nav.recipes">RECETAS</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer.rights">&copy; 2026 Sabores de Colombia. Una experiencia digital cultural y gastronómica.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

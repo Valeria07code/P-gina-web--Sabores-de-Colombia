@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es" data-title-key="title.bandeja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandeja Paisa - Sabores de Colombia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo-text">Sabores de Colombia</div>
+        <nav aria-label="Principal" data-i18n-label="nav.label">
+            <ul class="nav-links">
+                <li><a href="../index.html" data-i18n="nav.home">INICIO</a></li>
+                <li><a href="../index.html#regiones" data-i18n="nav.regions">REGIONES</a></li>
+                <li><a href="../index.html#recetas" data-i18n="nav.recipes">RECETAS</a></li>
+                <li class="lang-select">
+                    <a href="../index.html" class="active" data-lang="es" aria-current="true">ES</a>
+                    <span>|</span>
+                    <a href="../index-en.html" data-lang="en">EN</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="recipe-detail-container" style="padding: 4rem 15%; background: white; margin: 2rem auto; max-width: 900px; border-radius: 8px;">
+        <a href="../index.html#recetas" style="color: var(--color-terracota); font-weight: bold;" data-i18n="recipe.back">← Volver a recetas</a>
+
+        <h1 style="font-size: 2.8rem; margin: 1rem 0;" data-i18n="bandeja.title">Bandeja Paisa</h1>
+        <p style="font-style: italic; color: var(--color-verde); margin-bottom: 2rem;" data-i18n="bandeja.region">Región Andina • Colombia</p>
+
+        <!-- Imagen del plato -->
+        <img src="../Imagenes/BandejaPaisa.jpg" alt="Plato tradicional de Bandeja Paisa con frijoles, carne molida, chicharrón, huevo frito y arepa" data-i18n-alt="alt.bandeja" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 8px; margin-bottom: 2rem;">
+
+        <!-- Contexto Cultural -->
+        <section style="margin-bottom: 2rem;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 0.5rem;" data-i18n="recipe.history">Historia y Tradición</h2>
+            <p data-i18n="bandeja.history">La bandeja paisa es uno de los platos más representativos de la gastronomía de la región Andina, especialmente de Antioquia y el Eje Cafetero. Se caracteriza por ser una preparación abundante que reúne diferentes alimentos como fríjoles, arroz, carne molida, chicharrón, chorizo, huevo, plátano maduro, aguacate y arepa. Su composición refleja una tradición campesina en la que se buscaba proporcionar suficiente energía para las largas jornadas de trabajo agrícola. Culturalmente, representa la generosidad, abundancia y tradición familiar de la cultura paisa, y actualmente es reconocida como uno de los referentes de la identidad gastronómica colombiana.</p>
+        </section>
+
+        <!-- Ingredientes -->
+        <section style="margin-bottom: 2rem;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 0.5rem;" data-i18n="recipe.ingredients">Ingredientes</h2>
+            <ul style="margin-left: 2rem;">
+                <li data-i18n="bandeja.ing.1">150 g. de frijoles cocinados con un pocillo de hogao o guiso</li>
+                <li data-i18n="bandeja.ing.2">500 g. de carne de res, molida</li>
+                <li data-i18n="bandeja.ing.3">1 pocillo de hogao o guiso</li>
+                <li data-i18n="bandeja.ing.4">500 g. de tocineta cortada en cuatro trozos</li>
+                <li data-i18n="bandeja.ing.5">Arroz blanco</li>
+                <li data-i18n="bandeja.ing.6">Patacones</li>
+                <li data-i18n="bandeja.ing.7">Arepas</li>
+                <li data-i18n="bandeja.ing.8">Aguacate</li>
+                <li data-i18n="bandeja.ing.9">Huevos</li>
+                <li data-i18n="bandeja.ing.10">Aceite</li>
+            </ul>
+        </section>
+
+        <!-- Preparación -->
+        <section style="margin-bottom: 2rem;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 0.5rem;" data-i18n="recipe.method">Preparación</h2>
+            <ol style="margin-left: 2rem;">
+                <li data-i18n="bandeja.step.1">Fría la carne en un poco de aceite, agregue el hogao y cocine durante unos minutos, revolviendo de vez en cuando con una cuchara de madera.</li>
+                <li data-i18n="bandeja.step.2">A continuación, fría los trozos de tocineta en su propia grasa, hasta que esté tostada y se haga chicharrón.</li>
+                <li data-i18n="bandeja.step.3">Seguidamente, prepare el arroz blanco, los patacones y las arepas y guarde aparte.</li>
+                <li data-i18n="bandeja.step.4">Corte el aguacate por la mitad. Reparta todos los ingredientes preparados en bandejas individuales.</li>
+                <li data-i18n="bandeja.step.5">Por último, fría los huevos en aceite, ponga uno en cada bandeja y sirva.</li>
+            </ol>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Sabores de Colombia</div>
+            <ul class="footer-nav">
+                <li><a href="../index.html#inicio" data-i18n="nav.home">INICIO</a></li>
+                <li><a href="../index.html#regiones" data-i18n="nav.regions">REGIONES</a></li>
+                <li><a href="../index.html#recetas" data-i18n="nav.recipes">RECETAS</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer.rights">&copy; 2026 Sabores de Colombia. Una experiencia digital cultural y gastronómica.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es" data-title-key="title.sancocho">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sancocho Serrano - Sabores de Colombia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo-text">Sabores de Colombia</div>
+        <nav aria-label="Principal" data-i18n-label="nav.label">
+            <ul class="nav-links">
+                <li><a href="../index.html" data-i18n="nav.home">INICIO</a></li>
+                <li><a href="../index.html#regiones" data-i18n="nav.regions">REGIONES</a></li>
+                <li><a href="../index.html#recetas" data-i18n="nav.recipes">RECETAS</a></li>
+                <li class="lang-select">
+                    <a href="../index.html" class="active" data-lang="es" aria-current="true">ES</a>
+                    <span>|</span>
+                    <a href="../index-en.html" data-lang="en">EN</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="recipe-detail-container" style="padding: 4rem 15%; background: white; margin: 2rem auto; max-width: 900px; border-radius: 8px;">
+        <a href="../index.html#recetas" style="color: var(--color-terracota); font-weight: bold;" data-i18n="recipe.back">← Volver a recetas</a>
+
+        <h1 style="font-size: 2.8rem; margin: 1rem 0;" data-i18n="sancocho.title">Sancocho serrano</h1>
+        <p style="font-style: italic; color: var(--color-verde); margin-bottom: 2rem;" data-i18n="sancocho.region">Región Andina • Colombia</p>
+
+        <!-- Imagen del plato -->
+        <img src="../Imagenes/SancochoSerrano.jpg" alt="Plato hondo de Sancocho Serrano servido con trozos de yuca, plátano y carne" data-i18n-alt="alt.sancocho" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 8px; margin-bottom: 2rem;">
+
+        <!-- Contexto Cultural -->
+        <section style="margin-bottom: 2rem;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 0.5rem;" data-i18n="recipe.history">Historia y Tradición</h2>
+            <p data-i18n="sancocho.history">El sancocho serrano hace parte de la tradición culinaria de las zonas andinas y montañosas de Colombia. El sancocho, en sus diferentes versiones, suele prepararse con carnes, plátano, yuca, papa, mazorca, cebolla, cilantro y otros ingredientes disponibles en cada territorio. El término "serrano" hace referencia a su relación con las regiones de montaña y a las particularidades locales de su preparación. Más allá de ser un alimento, el sancocho tiene un fuerte significado social y comunitario: tradicionalmente se prepara en grandes cantidades para compartir en reuniones familiares, encuentros entre amigos, celebraciones y actividades comunitarias. Por ello, representa valores como la hospitalidad, la unión y el compartir.</p>
+        </section>
+
+        <!-- Ingredientes -->
+        <section style="margin-bottom: 2rem;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 0.5rem;" data-i18n="recipe.ingredients">Ingredientes</h2>
+            <ul style="margin-left: 2rem;">
+                <li data-i18n="sancocho.ing.1">500 g de carne serrana, cortada en dados.</li>
+                <li data-i18n="sancocho.ing.2">2 cebollas largas.</li>
+                <li data-i18n="sancocho.ing.3">4 plátanos verdes, pelados y partidos a mano.</li>
+                <li data-i18n="sancocho.ing.4">300 g de yuca.</li>
+                <li data-i18n="sancocho.ing.5">200 g de papas.</li>
+                <li data-i18n="sancocho.ing.6">1 tomate maduro, picado.</li>
+                <li data-i18n="sancocho.ing.7">3 hojas de chillangua (cilantro cimarrón), molidas.</li>
+                <li data-i18n="sancocho.ing.8">1 cucharadita de poleo molido.</li>
+                <li data-i18n="sancocho.ing.9">1 aguacate.</li>
+                <li data-i18n="sancocho.ing.10">Sal y pimienta al gusto.</li>
+            </ul>
+        </section>
+
+        <!-- Preparación -->
+        <section style="margin-bottom: 2rem;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 0.5rem;" data-i18n="recipe.method">Preparación</h2>
+            <ol style="margin-left: 2rem;">
+                <li data-i18n="sancocho.step.1">Corte la yuca y las papas en trozos. Agréguelas a la cacerola junto con los ingredientes restantes, excepto el aguacate.</li>
+                <li data-i18n="sancocho.step.2">Sazone con sal y pimienta al gusto. Cocine durante 20 minutos más, o hasta que todos los ingredientes estén tiernos.</li>
+                <li data-i18n="sancocho.step.3">Para finalizar, abra el aguacate por la mitad en sentido longitudinal, retire la pepa y córtelo en cuatro gajos.</li>
+                <li data-i18n="sancocho.step.4">Sirva el sancocho bien caliente acompañado de los gajos de aguacate.</li>
+            </ol>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Sabores de Colombia</div>
+            <ul class="footer-nav">
+                <li><a href="../index.html#inicio" data-i18n="nav.home">INICIO</a></li>
+                <li><a href="../index.html#regiones" data-i18n="nav.regions">REGIONES</a></li>
+                <li><a href="../index.html#recetas" data-i18n="nav.recipes">RECETAS</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer.rights">&copy; 2026 Sabores de Colombia. Una experiencia digital cultural y gastronómica.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

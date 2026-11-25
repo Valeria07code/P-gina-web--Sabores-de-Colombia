@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores de Colombia - Gastronomía Tradicional</title>
+
+    <!-- Importación de Fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- NAV BAR -->
+    <header class="navbar">
+        <div class="logo-text">Sabores de Colombia</div>
+        <nav aria-label="Principal" data-i18n-label="nav.label">
+            <ul class="nav-links">
+                <li><a href="#inicio" data-i18n="nav.home">INICIO</a></li>
+
+                <!-- RF-01: menú desplegable de regiones -->
+                <li class="dropdown" data-dropdown>
+                    <button class="dropdown__toggle" type="button" aria-expanded="false" aria-controls="menu-regiones" data-i18n="nav.regions">REGIONES</button>
+                    <ul class="dropdown__menu" id="menu-regiones" hidden>
+                        <li><a href="#regiones" data-i18n="nav.allRegions">Ver todas las regiones</a></li>
+                        <li><a href="#region-andina" data-i18n="region.andina">Región Andina</a></li>
+                        <li><a href="#region-caribe" data-i18n="region.caribe">Región Caribe</a></li>
+                        <li><a href="#region-pacifica" data-i18n="region.pacifica">Región Pacífica</a></li>
+                        <li><a href="#region-orinoquia" data-i18n="region.orinoquia">Región Orinoquía</a></li>
+                        <li><a href="#region-amazonica" data-i18n="region.amazonica">Región Amazónica</a></li>
+                        <li><a href="#region-insular" data-i18n="region.insular">Región Insular</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#recetas" data-i18n="nav.recipes">RECETAS</a></li>
+
+                <!-- RF-03: selector de idioma (JS lo intercepta; sin JS siguen funcionando los enlaces) -->
+                <li class="lang-select">
+                    <a href="index.html" class="active" data-lang="es" aria-current="true">ES</a>
+                    <span>|</span>
+                    <a href="index-en.html" data-lang="en">EN</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="inicio">
+        <!-- SECCIÓN HERO -->
+        <section class="hero">
+            <!-- RF-03: saludo personalizado por idioma y hora (lo rellena JS) -->
+            <p class="hero-greeting" id="welcome-greeting" aria-live="polite"></p>
+            <h1 data-i18n="hero.title">COLOMBIA A TRAVÉS DE SUS SABORES</h1>
+            <div class="hero-subtitle-box">
+                <p data-i18n="hero.subtitle">Descubre la diversidad gastronómica de Colombia</p>
+            </div>
+            <!-- RF-04: fecha y momento del día en Colombia (lo rellena JS) -->
+            <p class="hero-local" id="local-info"></p>
+        </section>
+
+        <!-- RF-02: SLIDER DE REGIONES -->
+        <section class="gallery">
+            <h2 class="section-btn-header" data-i18n="gallery.title">COLOMBIA EN IMÁGENES</h2>
+            <div class="slider" data-slider data-autoplay="6000" role="region" aria-roledescription="carrusel" aria-label="Postales de las regiones" data-i18n-label="slider.label">
+                <div class="slider__track">
+                    <figure class="slide">
+                        <img src="Imagenes/R%20andina.jpg" alt="" loading="lazy">
+                        <figcaption data-i18n="slide.andina">Región Andina: sabores de montaña</figcaption>
+                    </figure>
+                    <figure class="slide">
+                        <img src="Imagenes/R%20caribe.jpg" alt="" loading="lazy">
+                        <figcaption data-i18n="slide.caribe">Región Caribe: sol, mar y mariscos</figcaption>
+                    </figure>
+                    <figure class="slide">
+                        <img src="Imagenes/R%20pacifica.jpg" alt="" loading="lazy">
+                        <figcaption data-i18n="slide.pacifica">Región Pacífica: selva y litoral</figcaption>
+                    </figure>
+                    <figure class="slide">
+                        <img src="Imagenes/R%20orinoquia.jpg" alt="" loading="lazy">
+                        <figcaption data-i18n="slide.orinoquia">Región Orinoquía: llanos y ríos</figcaption>
+                    </figure>
+                    <figure class="slide">
+                        <img src="Imagenes/R%20amazonica.jpg" alt="" loading="lazy">
+                        <figcaption data-i18n="slide.amazonica">Región Amazónica: sabores de selva</figcaption>
+                    </figure>
+                    <figure class="slide">
+                        <img src="Imagenes/R%20insular.jpg" alt="" loading="lazy">
+                        <figcaption data-i18n="slide.insular">Región Insular: islas y atardeceres</figcaption>
+                    </figure>
+                </div>
+                <button class="slider__btn slider__btn--prev" type="button" aria-label="Anterior" data-i18n-label="slider.prev">&#8249;</button>
+                <button class="slider__btn slider__btn--next" type="button" aria-label="Siguiente" data-i18n-label="slider.next">&#8250;</button>
+                <div class="slider__dots" role="tablist"></div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN REGIONES -->
+        <section class="regions-section" id="regiones">
+            <h2 class="section-btn-header" data-i18n="regions.title">EXPLORA LAS REGIONES</h2>
+
+            <div class="grid-regions">
+                <!-- Región Andina -->
+                <article class="card-region" id="region-andina">
+                    <img src="Imagenes/RegionAndina.jpg" alt="Fotografía de un paisaje montañoso y tradicional de la Región Andina" data-i18n-alt="alt.andina" class="card-img-placeholder">
+                    <div class="card-region-footer">
+                        <h3 data-i18n="region.andina">Región Andina</h3>
+                    </div>
+                </article>
+
+                <!-- Región Caribe -->
+                <article class="card-region" id="region-caribe">
+                    <img src="Imagenes/RegionCaribe.jpg" alt="Fotografía de la costa tropical y mar de la Región Caribe" data-i18n-alt="alt.caribe" class="card-img-placeholder">
+                    <div class="card-region-footer">
+                        <h3 data-i18n="region.caribe">Región Caribe</h3>
+                    </div>
+                </article>
+
+                <!-- Región Pacífica -->
+                <article class="card-region" id="region-pacifica">
+                    <img src="Imagenes/RegionPacifica.jpg" alt="Fotografía de la selva biodiversa y litoral de la Región Pacífica" data-i18n-alt="alt.pacifica" class="card-img-placeholder">
+                    <div class="card-region-footer">
+                        <h3 data-i18n="region.pacifica">Región Pacífica</h3>
+                    </div>
+                </article>
+
+                <!-- Región Orinoquía -->
+                <article class="card-region" id="region-orinoquia">
+                    <img src="Imagenes/RegionOrinoquia.jpg" alt="Fotografía de un barco pesquero de madera de color rojo sobre la orilla de un río o lago de la Región Orinoquía" data-i18n-alt="alt.orinoquia" class="card-img-placeholder">
+                    <div class="card-region-footer">
+                        <h3 data-i18n="region.orinoquia">Región Orinoquía</h3>
+                    </div>
+                </article>
+
+                <!-- Región Amazónica -->
+                <article class="card-region" id="region-amazonica">
+                    <img src="Imagenes/RegionAmazonica.jpg" alt="Fotografía de un mono tití subiendo por la rama de un árbol en medio de la vegetación de la Región Amazónica" data-i18n-alt="alt.amazonica" class="card-img-placeholder">
+                    <div class="card-region-footer">
+                        <h3 data-i18n="region.amazonica">Región Amazónica</h3>
+                    </div>
+                </article>
+
+                <!-- Región Insular -->
+                <article class="card-region" id="region-insular">
+                    <img src="Imagenes/RegionInsular.jpg" alt="Fotografía de un atardecer sobre el mar con tonos rojizos y anaranjados en el horizonte de la Región Insular" data-i18n-alt="alt.insular" class="card-img-placeholder">
+                    <div class="card-region-footer">
+                        <h3 data-i18n="region.insular">Región Insular</h3>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECCIÓN RECETAS DESTACADAS -->
+        <section class="recipes-section" id="recetas">
+            <h2 class="section-btn-header" data-i18n="recipes.title">RECETAS DESTACADAS</h2>
+
+            <div class="grid-recipes">
+                <!-- Receta 1 -->
+                <article class="card-recipe">
+                    <div>
+                        <img src="Imagenes/fondoreceta.jpg" alt="Plato servido de arroz con camarones acompañado de patacones y ensalada" data-i18n-alt="alt.arroz">
+                        <h3>ARROZ CON CAMARONES</h3>
+                        <p data-i18n="recipe.arroz">Plato tradicional de la región Caribe.</p>
+                    </div>
+                    <a href="recetas/arroz.html" class="btn-recipe" data-i18n="recipe.view">VER RECETA</a>
+                </article>
+                <!-- Receta 2 -->
+                <article class="card-recipe">
+                    <div>
+                        <img src="Imagenes/ilustracion2.jpg" alt="Plato tradicional de Bandeja Paisa con frijoles, carne molida, chicharrón, huevo frito y arepa" data-i18n-alt="alt.bandeja">
+                        <h3>BANDEJA PAISA</h3>
+                        <p data-i18n="recipe.bandeja">Plato tradicional de la región Andina.</p>
+                    </div>
+                    <a href="recetas/bandeja.html" class="btn-recipe" data-i18n="recipe.view">VER RECETA</a>
+                </article>
+                <!-- Receta 3 -->
+                <article class="card-recipe">
+                    <div>
+                        <img src="Imagenes/ilustracion3.jpg" alt="Plato hondo de Sancocho Serrano servido con trozos de yuca, plátano y carne" data-i18n-alt="alt.sancocho">
+                        <h3>SANCOCHO SERRANO</h3>
+                        <p data-i18n="recipe.sancocho">Plato tradicional de la región Pacífica.</p>
+                    </div>
+                    <a href="recetas/sancochocho.html" class="btn-recipe" data-i18n="recipe.view">VER RECETA</a>
+                </article>
+            </div>
+
+            <a href="#recetas" class="btn-all-recipes" data-i18n="recipes.all">VER TODAS LAS RECETAS</a>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Sabores de Colombia</div>
+            <ul class="footer-nav">
+                <li><a href="index.html#inicio" data-i18n="nav.home">INICIO</a></li>
+                <li><a href="index.html#regiones" data-i18n="nav.regions">REGIONES</a></li>
+                <li><a href="index.html#recetas" data-i18n="nav.recipes">RECETAS</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer.rights">&copy; 2026 Sabores de Colombia. Una experiencia digital cultural y gastronómica.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
